@@ -1,0 +1,40 @@
+<configuration>
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:mysql://master:3306/hive?createDatabaseIfNotExist=true</value>
+        <description>the URL of the MySQL database</description>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionDriverName</name>
+        <value>com.mysql.jdbc.Driver</value>
+        <description>Driver class name for a JDBC metastore</description>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionUserName</name>
+        <value>root</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionPassword</name>
+        <value>root</value>
+    </property>
+
+
+    <property>
+         <name>hive.aux.jars.path</name>
+          <value>file:///usr/local/src/apache-hive-1.2.2-bin/lib/hive-hcatalog-core-1.2.2.jar</value>
+    </property>
+
+
+    <property>
+        <name>hive.querylog.location</name>
+        <value>/usr/local/src/apache-hive-1.2.2-bin/log</value>
+    </property>
+
+
+
+
+
+</configuration>
